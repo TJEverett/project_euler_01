@@ -15,3 +15,11 @@ export function divisorFilter(divisor, arrayStart){
   }
   return outputArray;
 }
+
+export function arrayAddition(arrayStart){
+  let output = 0;
+  for(let i = 0; i < arrayStart.length; i++){
+    output += arrayStart[i];
+  }
+  return output;
+}
