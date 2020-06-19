@@ -23,3 +23,10 @@ export function arrayAddition(arrayStart){
   }
   return output;
 }
+
+export function fibonacciSum(max, divisor){
+  const fibonacciArray = fibonacci(max);
+  const dividedArray = divisorFilter(divisor, fibonacciArray);
+  const sum = arrayAddition(dividedArray);
+  return sum;
+}
