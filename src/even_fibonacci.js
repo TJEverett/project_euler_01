@@ -5,3 +5,13 @@ export function fibonacci(max){
   }
   return outputArray;
 }
+
+export function divisorFilter(divisor, arrayStart){
+  let outputArray = [];
+  for(let i = 0; i < arrayStart.length; i++){
+    if ((arrayStart[i] % divisor) === 0){
+      outputArray.push(arrayStart[i]);
+    }
+  }
+  return outputArray;
+}
